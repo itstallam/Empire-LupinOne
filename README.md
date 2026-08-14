@@ -52,7 +52,16 @@ From our previous scan we can see that:
 
 ## 2. Directory Enumeration.
 We navigate to the port 80 http://192.168.56.19. We are Greeted by the Photo of Arsene
-Navigate to http://192.168.56.12/robots.txt. And you will not the disallowed directoty "~myfiles"y
+
+<p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/w1.png" width="600"/> </p>
+
+Navigate to http://192.168.56.12/robots.txt. 
+You will note the disallowed directory "~myfiles"
+<p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/w2.png" width="600"/> </p>
+
+When you navigate to the file http://192.168.56.19/~myfiles, you are hit with the error "Not found"
+
+<P align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/w3.png"  width="600"/> </p>
 
 ### **FFUF Directory Discovery**
 We will use ffuf to discover hidden directories on the web server:
@@ -62,16 +71,26 @@ We will use ffuf to discover hidden directories on the web server:
 <p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/s4.png" width="600"/> </p>
 
 ### **Finding Hidden Files**
-We discovered a `~secret` directory. Let's enumerate further:
+We discovered a `~secret` directory.
+
+<p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/w4.png" width="600"/> </p>
+
+
+Let's enumerate further:
 > $ffuf -c -ic -u http://192.168.56.19/~secret/.FUZZ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -fc 403 -e .txt,.html,.php
 
 This result shows a file '.mysecret.txt' which contains the ssh key.
+
+<p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/s5.png" width="600"/> </p>
+
 Navigate to http://192.168.56.19/~secret/.mysecret.txt.
+
+<p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/w5.png" width="600"/> </p>
 
 Copy the key and navigate to Cyberchief on your web browser to convert the ssh key. Select fromBase58 and you will see the openssh key.
 ---
 
-<p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/s5.png" width="600"/> </p>
+<p align="center"> <img src="https://github.com/itstallam/Empire-LupinOne/blob/main/Screenshots/w6.png" width="600"/> </p>
 
 ## 3. SSH Key Extraction.
 ### **Converting SSH Key to Hash Format**
