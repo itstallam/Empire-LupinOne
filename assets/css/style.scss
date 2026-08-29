@@ -1,15 +1,15 @@
 ---
 ---
 
-@import "jekyll-theme-architect";
+@import "jekyll-theme-cayman";
 
-/* DARK OVERRIDE: Architect Brutalist */
+/* DARK OVERRIDE: Cayman Deep */
 
 html,
 body {
-  background-color: #0c0b09 !important;
-  color: #f0ebe3 !important;
-  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif !important;
+  background-color: #0a0f0d !important;
+  color: #e8f0ec !important;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
 .container,
@@ -20,10 +20,10 @@ body {
 .post-content,
 article,
 section {
-  background: #151310 !important;
-  background-color: #151310 !important;
-  color: #f0ebe3 !important;
-  border: 1px solid #2c2720 !important;
+  background: #111a16 !important;
+  background-color: #111a16 !important;
+  color: #e8f0ec !important;
+  border: 1px solid #1a2e26 !important;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6,
 header h1, header h2,
 .post-title {
   color: #f59e0b !important;
-  font-family: 'Oswald', 'Bebas Neue', Impact, sans-serif !important;
+  font-family: 'Oswald', 'Bebas Neue', sans-serif !important;
 }
 
 a,
@@ -43,7 +43,7 @@ a,
 }
 a:hover,
 .markdown-body a:hover {
-  color: #ef4444 !important;
+  color: #14b8a6 !important;
   text-decoration: underline !important;
 }
 
@@ -52,42 +52,42 @@ pre, code,
 .highlight code,
 .markdown-body pre,
 .markdown-body code {
-  background: #110f0c !important;
-  background-color: #110f0c !important;
-  border: 1px solid #2c2720 !important;
+  background: #080f0c !important;
+  background-color: #080f0c !important;
+  border: 1px solid #1a2e26 !important;
   color: #f59e0b !important;
   font-family: 'IBM Plex Mono', 'Fira Code', monospace !important;
 }
 
 table,
 .markdown-body table {
-  background: #151310 !important;
-  background-color: #151310 !important;
-  border: 1px solid #2c2720 !important;
+  background: #111a16 !important;
+  background-color: #111a16 !important;
+  border: 1px solid #1a2e26 !important;
 }
 th, td,
 .markdown-body th,
 .markdown-body td {
-  border: 1px solid #2c2720 !important;
+  border: 1px solid #1a2e26 !important;
 }
 th,
 .markdown-body th {
-  background: #110f0c !important;
-  background-color: #110f0c !important;
+  background: #080f0c !important;
+  background-color: #080f0c !important;
   color: #f59e0b !important;
 }
 
 hr,
 .markdown-body hr {
   border: 0 !important;
-  border-top: 1px solid #2c2720 !important;
+  border-top: 1px solid #1a2e26 !important;
 }
 
 .btn,
 button,
 .markdown-body .btn {
-  background: #151310 !important;
-  background-color: #151310 !important;
+  background: #111a16 !important;
+  background-color: #111a16 !important;
   border: 1px solid #f59e0b !important;
   color: #f59e0b !important;
 }
@@ -95,30 +95,30 @@ button,
 button:hover {
   background: #f59e0b !important;
   background-color: #f59e0b !important;
-  color: #0c0b09 !important;
+  color: #0a0f0d !important;
 }
 
 ::selection {
   background: #f59e0b !important;
-  color: #0c0b09 !important;
+  color: #0a0f0d !important;
 }
 
 ul, ol, li,
 .markdown-body ul,
 .markdown-body ol,
 .markdown-body li {
-  color: #f0ebe3 !important;
+  color: #e8f0ec !important;
 }
 
 p, span, div,
 .markdown-body p,
 .markdown-body span {
-  color: #f0ebe3 !important;
+  color: #e8f0ec !important;
 }
 
 .page-header,
 header {
-  background: #151310 !important;
-  background-color: #151310 !important;
-  border-bottom: 1px solid #2c2720 !important;
+  background: #111a16 !important;
+  background-color: #111a16 !important;
+  border-bottom: 1px solid #1a2e26 !important;
 }
