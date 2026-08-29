@@ -1,1 +1,124 @@
-w
+---
+---
+
+@import "jekyll-theme-architect";
+
+/* DARK OVERRIDE: Architect Brutalist */
+
+html,
+body {
+  background-color: #0c0b09 !important;
+  color: #f0ebe3 !important;
+  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif !important;
+}
+
+.container,
+.wrapper,
+#main-content,
+.page-content,
+.markdown-body,
+.post-content,
+article,
+section {
+  background: #151310 !important;
+  background-color: #151310 !important;
+  color: #f0ebe3 !important;
+  border: 1px solid #2c2720 !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.project-name,
+.page-header .project-name,
+header h1, header h2,
+.post-title {
+  color: #f59e0b !important;
+  font-family: 'Oswald', 'Bebas Neue', Impact, sans-serif !important;
+}
+
+a,
+.markdown-body a,
+.post-content a {
+  color: #f59e0b !important;
+  text-decoration: none !important;
+}
+a:hover,
+.markdown-body a:hover {
+  color: #ef4444 !important;
+  text-decoration: underline !important;
+}
+
+pre, code,
+.highlight pre,
+.highlight code,
+.markdown-body pre,
+.markdown-body code {
+  background: #110f0c !important;
+  background-color: #110f0c !important;
+  border: 1px solid #2c2720 !important;
+  color: #f59e0b !important;
+  font-family: 'IBM Plex Mono', 'Fira Code', monospace !important;
+}
+
+table,
+.markdown-body table {
+  background: #151310 !important;
+  background-color: #151310 !important;
+  border: 1px solid #2c2720 !important;
+}
+th, td,
+.markdown-body th,
+.markdown-body td {
+  border: 1px solid #2c2720 !important;
+}
+th,
+.markdown-body th {
+  background: #110f0c !important;
+  background-color: #110f0c !important;
+  color: #f59e0b !important;
+}
+
+hr,
+.markdown-body hr {
+  border: 0 !important;
+  border-top: 1px solid #2c2720 !important;
+}
+
+.btn,
+button,
+.markdown-body .btn {
+  background: #151310 !important;
+  background-color: #151310 !important;
+  border: 1px solid #f59e0b !important;
+  color: #f59e0b !important;
+}
+.btn:hover,
+button:hover {
+  background: #f59e0b !important;
+  background-color: #f59e0b !important;
+  color: #0c0b09 !important;
+}
+
+::selection {
+  background: #f59e0b !important;
+  color: #0c0b09 !important;
+}
+
+ul, ol, li,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body li {
+  color: #f0ebe3 !important;
+}
+
+p, span, div,
+.markdown-body p,
+.markdown-body span {
+  color: #f0ebe3 !important;
+}
+
+.page-header,
+header {
+  background: #151310 !important;
+  background-color: #151310 !important;
+  border-bottom: 1px solid #2c2720 !important;
+}
