@@ -1,0 +1,9 @@
+remote_theme: b2a3e8/jekyll-theme-console
+plugins:
+  - jekyll-remote-theme
+
+title: EMPIRE LUPINONE
+description: Empire LupinOne Penetration Testing Walkthrough — From Reconnaissance to Root.
+baseurl: "/Empire-LupinOne"
+
+style: nord
